@@ -30,4 +30,4 @@ python ascii-script.py https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-conten
 1. convert image to grayscale 
 1. convert each gray scale pixel into ascii character with similar density
 
-[using this tutorial](Turn any image into ASCII art! (Easy Python PIL Tutorial))
+[using this tutorial](https://www.youtube.com/watch?v=v_raWlX7tZY)
