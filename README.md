@@ -19,3 +19,5 @@ python ascii-script.py corgi.jpeg 0 100
 python ascii-script.py corgi.jpeg 1
 
 ```
+
+[using this tutorial](Turn any image into ASCII art! (Easy Python PIL Tutorial))
