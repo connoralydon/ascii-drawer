@@ -20,6 +20,9 @@ python ascii-script.py corgi.jpeg 0 100
 
 python ascii-script.py corgi.jpeg 1
 
+python ascii-script.py https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213218/German-Shepherd-on-White-00.jpg 
+# to grab web links to images
+
 ```
 
 ### steps

@@ -1,6 +1,8 @@
 # ascii-script.py
 
 import sys
+import requests
+from io import BytesIO
 import PIL.Image
 import PIL.ImageOps
 
@@ -47,9 +49,12 @@ def main(argv):
     
     # open image from user input
     # path = input("Enter pathname to an image: \n")
-    
+
     try:
         image = PIL.Image.open(path)
+    except FileNotFoundError:
+        response = requests.get(path)
+        image = PIL.Image.open(BytesIO(response.content))
     except:
         print(path, "is not a valid pathname to an image.")
         
@@ -64,9 +69,13 @@ def main(argv):
     print(ascii_image)
     
     # save result to "ascii_image.txt"
-    save_name = path.split(".")[0] + ".txt"
+    save_name = path.split("/")[-1].split(".")[-2] + ".txt"
     with open(save_name,'w') as f:
         f.write(ascii_image)
 
 if __name__ == "__main__":
     main(sys.argv)
+    
+    
+
+
