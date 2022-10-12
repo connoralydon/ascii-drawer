@@ -1,12 +1,14 @@
 # ascii-drawer
 
-## steps
-1. convert image to correct width
-1. convert image to grayscale 
-1. convert each gray scale pixel into ascii character with similar density
+### example:
 
+original image:
 
+<img src="corgi.jpeg" alt="corgi in field, smiling" width="200"/>
 
+corresponding ascii art:
+
+[corgi.txt](corgi.txt)
 
 ```bash
 
@@ -19,5 +21,10 @@ python ascii-script.py corgi.jpeg 0 100
 python ascii-script.py corgi.jpeg 1
 
 ```
+
+### steps
+1. convert image to correct width
+1. convert image to grayscale 
+1. convert each gray scale pixel into ascii character with similar density
 
 [using this tutorial](Turn any image into ASCII art! (Easy Python PIL Tutorial))
